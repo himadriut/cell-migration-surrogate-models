@@ -1,0 +1,7 @@
+component,intended_use,main_result,limitation,final_status
+Probabilistic MLP,One-step displacement and velocity prediction,Accurate one-step prediction with calibrated uncertainty,Small velocity bias accumulates during recursive rollout,Retain for one-step prediction and assimilation
+Structured phenotype head,Amoeboid-mesenchymal transition probability,Reproduces learned no-flow and flow equilibrium fractions,Requires phenotype or motion information for experimental identification,Validated
+Transformer,History-based trajectory prediction,Improved displacement RMSE by about 24 percent and velocity RMSE by about 58 percent over the history baseline,More computationally expensive and phenotype inference is moderate,Retain as history-based forecasting model
+Short-range pair-force MLP,Phenotype-dependent cell-cell force approximation,R-squared 0.99974 with approximately 5 percent colony-force error,Slower than the optimized vectorized analytical force,Validated
+Unconstrained recursive MLP,Long multistep colony rollout,Stable but accumulated excessive speed and MSD,No-flow MSD error exceeded 100 percent,Do not use for long rollout
+Structured hybrid surrogate,Stable long-term colony rollout,"Final MSD, speed, radius and phenotype fraction agree with the mechanistic reference within approximately 0.4 percent",Approximately 8.9 percent slower than the optimized exact vectorized model,Final recommended rollout model

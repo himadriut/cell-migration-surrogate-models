@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the repository."
+title: "Probabilistic and Structured Surrogates for Cell Migration"
+type: software
+authors:
+  - family-names: Samanta
+    given-names: Himadri Sekhar
+date-released: 2026-09-30
+license: MIT
+repository-code: "https://github.com/himadriut/cell-migration-surrogate-models"
+keywords:
+  - digital twin
+  - cell migration
+  - surrogate modeling
+  - mechanistic machine learning
+  - uncertainty quantification
+
